@@ -18,14 +18,16 @@ public class texts {
     public static String testWhile(String keyTest){
         
         
-        while(keyTest != "hello world"){ 
+        while(!keyTest.equals("hello world")) { 
 
             System.out.println("You didn't type the correct passaword, please try again\n");
             keyTest = input();
 
         }
-        return keyTest;
 
+        System.out.println("You typed the correct passaword, welcome to the system\n");
+
+        return keyTest;
 
     };
 
@@ -36,6 +38,6 @@ public class texts {
 
 
 
-}
+} 
 
 

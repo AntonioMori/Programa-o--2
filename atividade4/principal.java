@@ -52,7 +52,7 @@ public class principal {
 
 
 
-        System.out.println("\nQuestão 5.\nClasse pessoa\n");
+        System.out.println("\nQuestão 5.\nClasse pessoa, arrayPessoas\n");
 
         pessoa[] arrayPessoas = {new pessoa("Giovanna Vilela", 21), new pessoa("Antonio Mori", 20), new pessoa("Felipe Patriota", 25)};
         
@@ -60,12 +60,20 @@ public class principal {
             arrayPessoas[i].imprimir();
         }
 
-        System.out.println("\nQuestão 6.\nArrayList de pessoas\n");
-        
-        ArrayList<String> arrayListPessoas = new ArrayList<>();
 
-        List<pessoa> pessoasList = Arrays.asList(new pessoa("Lucas", 54));
-    
-    
+
+        System.out.println("\nQuestão 6.\nClasse pessoa, arrayList de pessoas\n");
+        
+        ArrayList<pessoa> arrayListPessoas = new ArrayList<>();
+
+        List<pessoa> pessoasList = Arrays.asList(new pessoa("Lucas", 54),new pessoa("Gustavo", 15), new pessoa("Bárbara",21));
+        
+        arrayListPessoas.addAll(pessoasList);
+        for(int i = 0; i<arrayListPessoas.size();i++){
+            arrayListPessoas.get(i).imprimir();
+
+        }
+
+        System.out.println("\nQuestão 7.\nMinimapa de jogo\n");
     }
 }

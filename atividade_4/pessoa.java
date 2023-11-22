@@ -1,4 +1,4 @@
-package atividade4;
+package atividade_4;
 
 public class pessoa {
     String nome;

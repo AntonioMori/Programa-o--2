@@ -1,4 +1,4 @@
-package atividade4;
+package atividade_4;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
